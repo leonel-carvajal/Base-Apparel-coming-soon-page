@@ -1,0 +1,76 @@
+:root{
+--Desaturated-Red: hsl(0, 36%, 70%);
+--Soft-Red: hsl(0, 93%, 68%);
+--Dark-Grayish-Red: hsl(0, 6%, 24%);
+--Linear: 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+--Linear-Two: 135deg, from rgb(248, 191, 191), to rgb(238, 140, 140);
+}
+body{
+  font-family: 'Josefin Sans',sans-serif;
+  font-size: 16px;
+}
+.header{
+  height: 75px;
+  position: relative;
+}
+.header__img{
+  max-width: 30%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.main__title{
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--Dark-Grayish-Red);
+  letter-spacing: 10px;
+}
+.main__remark{
+  color: var(--Desaturated-Red);
+}
+.main__info{
+  color: var(--Desaturated-Red);
+  text-align: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer{
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.footer__email{
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  padding: 0.8em;
+  border-radius: 25px;
+  border: 1px solid var(--Desaturated-Red);
+  text-align: center;
+}
+.footer__button{
+  position: absolute;
+  top: 0;
+  right: 35px;
+  width: 65px;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding: 1em;
+  border-radius: 75px;
+  background: linear-gradient(rgb(248, 191, 191) , rgb(238, 140, 140));
+}
+.footer__arrow{
+  position: absolute;
+  width: 15px;
+  top: 10px;
+  right: 55px;
+  z-index: 100;
+}
