@@ -14,33 +14,40 @@
 <header class="header">
   <img src="images/logo.svg" alt="logo" class="header__img">
 </header>
-<main>
+<main class="container">
+<div class="container__img">
+  <picture>
+    <source srcset="images/hero-desktop.jpg" media="(min-width:1024px)" class="main__img">
+    <img src="images/hero-mobile.jpg" alt="Logo" class="main__img">
+  </picture>
+</div>
   <section class="main">
-    <picture class="main__mg">
-      <source srcset="images/hero-desktop.jpg" media="(min-width:1024px)">
-      <img src="images/hero-mobile.jpg" alt="Logo">
-    </picture>
     <h1 class="main__title"> <span class="main__remark">We're</span> coming soon</h1>
     <p class="main__info">
       Hello fellow shoppers! We're currently building our new fashion store.
       Add your email below to stay up-to-date with announcements and our launch deals.
     </p>
+    <footer class="footer"> 
+    <form action="#" id="form">
+      <input type="email" name="email" id="email" class="footer__email " placeholder="email address">
+      <img src="images/icon-arrow.svg" alt="icon-arrow" class="footer__arrow">
+      <button class="footer__button" id="button"></button>
+      <p class="footer__error" id="footer__error">Please provide a valid Email</p>
+    </form>
+    <p class="footer__link">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__name">Frontend Mentor</a>.
+      Coded by <a href="#" class="footer__name">Leonel Carvajal</a>.
+    </p>
+    </footer>
   </section>
 </main>
-<footer class="footer"> 
-<form action="#">
-  <input type="email" name="email" id="email" class="footer__email" placeholder="email address"
-    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-  <img src="images/icon-arrow.svg" alt="icon-arrow" class="footer__arrow">
-  <button class="footer__button"></button>
-</form>
-</footer>
-  
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
+<div class="modal" id="modal">
+  <div class="modal__content">
+    <img src="images/icon-check.svg" alt="icon-check" class="modal__img">
+    <img src="images/icon-close-modal.svg" alt="icon-close-modal" class="modal__close" id="icon__close">
+    <p class="modal__info">Email Correct</p>
+  </div>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
