@@ -192,4 +192,7 @@ body{
   .footer__email--active{
     border: 1px solid var(--Soft-Red);
   }
+  .footer__arrow--active{
+    display: block;
+  }
 }

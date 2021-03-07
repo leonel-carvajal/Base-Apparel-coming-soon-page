@@ -16,9 +16,11 @@ const validateEmail = (data) => {
     email.classList.remove('error')
     email.classList.remove('footer__email--active')
     button.classList.remove('footer__button--send')
+    footerError.classList.remove('footer__arrow--active')
   } 
   else {
     email.classList.add('error')
+    footerError.classList.add('footer__arrow--active')
     email.classList.add('footer__email--active')
     button.classList.add('footer__button--send')
 
