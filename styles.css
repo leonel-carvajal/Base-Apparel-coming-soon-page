@@ -183,7 +183,7 @@ body{
   .error{
     background-image:url('/images/icon-error.svg');
     background-repeat: no-repeat;
-    background-position: 70% 10px;
+    background-position: 75% 10px;
   }
   .footer__button--send{
     transform: scale(1.1);
